@@ -27,7 +27,7 @@
   </div>
   <div class="field">
     <%= f.label :tag_tokens, "Tags" %><br />
-    <%= f.text_field :tag_tokens %>
+    <%= f.text_field :tag_tokens, 'data-pre' => @project.tags.map.to_json %>
   </div>
   <div class="actions">
     <%= f.submit %>
