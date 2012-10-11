@@ -13,3 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function() {
+	$('#project_tag_tokens').tokenInput("/tags.json", {
+		crossDomain: false,
+		allowFreeTagging: true,
+		tokenValue: 'name'
+	});
+});
